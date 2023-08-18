@@ -77,7 +77,7 @@ li {
 }
 
 .navbar-logo.hidden {
-    opacity: 0; 
+    opacity: 0;
     pointer-events: none;
 }
 
@@ -85,6 +85,9 @@ li {
     color: #e9ecef;
     font-size: 1.25rem;
     font-weight: 600;
+
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .sidebar-nav {
@@ -211,16 +214,48 @@ section.chat__section {
 
 }
 
+.msg-text {
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 0 35px 0 rgba(10, 12, 14, 0.5);
+}
+
+.send-icon {
+
+    width: 8%;
+    height: 70px;
+    padding: 10px;
+
+    border-bottom-right-radius: 1rem;
+
+    color: #444;
+    background: #e9ecef;
+    border-left: 1px solid #273940;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-icon:hover {
+    background-color: #273940;
+    cursor: pointer;
+    color: #e9ecef;
+
+    opacity: 0.7;
+}
+
 #textarea {
-    width: 100%;
+    width: 92%;
+    height: 70px;
     border: none;
     padding: 20px;
     font-size: 16px;
     outline: none;
-    background: #FBFBFB;
+    background: #e9ecef;
 
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 
     color: #444;
 }
