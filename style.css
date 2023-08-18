@@ -169,6 +169,8 @@ section.chat__section {
     background: #f1f1f1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 
@@ -178,11 +180,32 @@ section.chat__section {
 .brand h1 {
     text-transform: uppercase;
     color: #444;
-    margin-left: 10px;
 
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
+
+    opacity: 0.7;
+}
+
+.brand h4 {
+    text-transform: uppercase;
+    color: #444;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+
+    opacity: 0.7;
+}
+
+.brand h4 span {
+    font-weight: 500;
+}
+
+.brand i{
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .message__area {
